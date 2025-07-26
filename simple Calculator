@@ -1,0 +1,35 @@
+def add(num1, num2):
+    return num1 + num2
+
+def sub(num1, num2):
+    return num1 - num2
+
+def mult(num1, num2):
+    return num1 * num2
+
+def div(num1, num2):
+    return num1 / num2
+
+print("Select an operation:\n"
+      "1. Addition\n"
+      "2. Subtraction\n"
+      "3. Multiplication\n"
+      "4. Division\n")
+
+choice = input("Enter an operation from the list above (1/2/3/4): ")
+num1 = float(input("Enter the value for num1: "))
+num2 = float(input("Enter the value for num2: "))
+
+if choice == "1":
+    print(f"{num1} + {num2} = {add(num1, num2)}")
+elif choice == "2":
+    print(f"{num1} - {num2} = {sub(num1, num2)}")
+elif choice == "3":
+    print(f"{num1} * {num2} = {mult(num1, num2)}")
+elif choice == "4":
+    if num2 == 0:
+        print("Error: Division by zero is not allowed.")
+    else:
+        print(f"{num1} / {num2} = {div(num1, num2)}")
+else:
+    print("Invalid Choice!!")
