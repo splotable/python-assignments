@@ -1,0 +1,16 @@
+class animals:
+    def __init__(self,name,color,movement):
+        self.name = name
+        self.color = color
+        self.movement = movement
+
+    def move(self):
+        return f"The {self.name} is {self.movement}"
+
+animal1 = animals("Cat", "White", "Walking")
+animal2 = animals("Parrot", "Blue", "Flying")
+animal3 = animals("Fish", "Yellow", "Swimming")
+
+print(animal1.move())
+print(animal2.move())
+print(animal3.move())
